@@ -71,41 +71,41 @@ content:
       - layout: left
         title: Software Engineering and Design
         sub_title: Enhancement One
-        link: "aldonadi.github.io/assets/garden-app-ui-wireframe.pdf"
-        link_text: [PDF link]
         quote: >
           Garden Tracking App UI/Flow Wireframe and Implementation
         description: |
-          ## Before Enhancement
           
-          Design and implementation of workflow allowing a user to record a new watering event for their garden crops.
-          
-          Description before enhancement.
+          I had designed a wireframe in LucidChart for my theoretical garden tracking app, specifically the workflow of logging the watering of a garden crops. You can see [the artifact before any anhancements here.](/assets/garden-app-ui-wireframe.pdf).
 
-          ## After Enhancement
+          I chose this as an artifact to enhance because it demonstrates the ability to set up and configure complex development environments (Android Studio) and utilize software development best practices and modern framworks to create a functional application. To be more specific, I implemented this workflow UI using Android's Jetpack Compose library. This is a _reactive UI_ which revolves around data streams (or "flows") for continuous live updating. Implementing this workflow required me to write a large amount of boilerplate code and component wiring between `ViewModel` objects, `@Composable` functions, `Compose Navigation` controller objects, and of course tight integration with the Android OS environment. I had to resort constantly to the [official Android documentation](https://developer.android.com/develop/ui/compose/documentation) along with guides and videos. I found the official documentation to be lacking in several areas which required me to dig into existing open source applications that use Compose to see how things are done. The enhancements breathed life into the static wireframe.
 
-          Description after enhancement.
+          <img src="images/gardentracker-showcase.gif" alt="Watering workflow showcase" height="600"/>
+
+          The full code for the implemented Garden Tracker application can be [found on GitHub](https://github.com/aldonadi/GardenTracker).
+
+          Specific code examples: Here is the code for the app's [summary screen UI](https://github.com/aldonadi/GardenTracker/blob/master/app/src/main/java/com/cs499/gardentracker/ui/screens/summary/SummaryScreen.kt) and [ViewModel](https://github.com/aldonadi/GardenTracker/blob/master/app/src/main/java/com/cs499/gardentracker/ui/screens/summary/SummaryViewModel.kt).
+
 
       - layout: left
         title: Algorithms and Data Structures
         sub_title: Enhancement Two
-        link: "/aldonadi.github.io/aassets/interview-records.pdf"
+        link: "/aldonadi.github.io/assets/interview-records.pdf"
         link_text: [PDF link]
         quote: >
           User Interviews, Paper Prototypes, and Data Organization
         description: |
           ## Before Enhancement
 
-          DInterviewing potential users along with paper prototypes of screens helped me elicit the data structures and algorithms necessary to organize and work with the various kinds of data that I would need to implement in the app.escription before enhancement.
+          Interviewing potential users along with paper prototypes of screens helped me elicit the data structures and algorithms necessary to organize and work with the various kinds of data that I would need to implement in the app.escription before enhancement.
 
           ## After Enhancement
 
-          Description after enhancement.
+          I implemented the basic workflow from app starting to .
 
       - layout: left
         title: Database 
         sub_title: Enhancement Three
-        link: "/aldonadi.github.io/aassets/interview-records.pdf"
+        link: "/aldonadi.github.io/assets/interview-records.pdf"
         link_text: [PDF link]
         quote: >
           Interviewing potential users along with paper prototypes of screens helped me elicit the data structures and algorithms necessary to organize and work with the various kinds of data that I would need to implement in the app.
