@@ -91,24 +91,36 @@ content:
 
           While there are many points of refinement I have not yet attended to in my app, I believe that I have successfully demonstrated the outcomes I set out to demonstrate, with comment. Specifically, I believe I successfully **employed strategies for building collaborative environments for diverse audiences** through the use of my user interviews for eliciting requirements. I also **designed, developed, and delivered professional communications** through my UI design and comments throughout the code.
 
-          However, I believe I have _incompletely_ demonstrated **well-founded and innovative techniques for implementing solutions** due to one very large defect in my implementation. This is that I am taking advantage of streaming `Flow` objects for anything except the passing of data from my ViewModels to my composable functions. This means that the chain of data from database, to DAO, to repository, to ViewModel can become stale without manually refreshing. I did not catch on to this flaw until late in the course and I have not had time to fix it (yet).
+          However, I believe I have _incompletely_ demonstrated **well-founded and innovative techniques for implementing solutions** due to one very large defect in my implementation. This is that I am NOT taking advantage of streaming `Flow` objects for anything except the passing of data from my ViewModels to my composable functions. This means that the chain of data from database, to DAO, to repository, to ViewModel can become stale without manually refreshing. I did not catch on to this flaw until late in the course and I have not had time to fix it (yet).
+
+          ## Artifact materials
+
+          - Before enhancement: [Watering workflow wireframe](/assets/garden-app-ui-wireframe.pdf)
+          - After enhancement: [Garden Tracker App](https://github.com/aldonadi/GardenTracker)
 
 
       - layout: left
         title: Algorithms and Data Structures
         sub_title: Enhancement Two
-        link: "/aldonadi.github.io/assets/interview-records.pdf"
-        link_text: [PDF link]
         quote: >
           User Interviews, Paper Prototypes, and Data Organization
         description: |
-          ## Before Enhancement
+          I had previously interviewed three potential users to elicit requirements and obtain feedback on concept versions of my garden app. I used paper prototypes of screens to assist the interviewes in navigating various workflows. The [data I obtained from these interviews](/assets/interview-records.pdf) helped me to construct the data structures and algorithms necessary to organize various kinds of data and relationships that I would need to implement in the app, as well as the operations I would need to perform on them.
 
-          Interviewing potential users along with paper prototypes of screens helped me elicit the data structures and algorithms necessary to organize and work with the various kinds of data that I would need to implement in the app.escription before enhancement.
+          I chose this as an artifact since it showcases my abilities to convert functional and business requirements into computatable representations by selecting appropriate data types and algorithms for best performance and usability.
 
-          ## After Enhancement
+          For example, I organized garden data into [`PlotEntity`](https://github.com/aldonadi/GardenTracker/blob/master/app/src/main/java/com/cs499/gardentracker/data/plot/PlotEntity.kt) objects which can contain one or more [`CropEntity`](https://github.com/aldonadi/GardenTracker/blob/master/app/src/main/java/com/cs499/gardentracker/data/crop/CropEntity.kt) objects. These are essentially `struct`s that I collect into `List` containers for transferring around the program. As another example, on the Watering List screen ViewModel I [create a map of `plotId`s to plot names](https://github.com/aldonadi/GardenTracker/blob/bd9ecdc2615f7c32bd03df20a8b406110266b470/app/src/main/java/com/cs499/gardentracker/ui/screens/watering/WateringListViewModel.kt#L78) for creating the plot name header rows that each plot's crop is displayed beneath.
 
-          I implemented the basic workflow from app starting to .
+          ## Reflection
+
+          I had never seen Kotlin code before starting this course, I had to quickly get familiar with Kotlin syntax and idiosyncrasies, such as the concept of `data class` and the specific functional algorithm method names that can be used on collections. I refined my ability to think in functional, rather than procedural, terms. Additionally, I went through several iterations to arrive at the set of operations I perform on my data in the ViewModel for performance and memory usage reasons. At first I collected all data from the database as potentially huge lists of objects, but I was able to refine that approach to be more selective and performant. However, one large defect that remains is that I am not making effective use of threads and coroutines to minimize latency. For example, I have several examples of calling [`async` and `await` on the same line](https://github.com/aldonadi/GardenTracker/blob/bd9ecdc2615f7c32bd03df20a8b406110266b470/app/src/main/java/com/cs499/gardentracker/ui/screens/summary/SummaryViewModel.kt#L74), effectively neutering any coroutine advantages.
+
+          I believe I successfully demonstrated the three outcomes I set out to, again with a comment. I **designed, developed, and delivered professional-quality communications** largely through my code comments and this narrative. I **designed and evaluated computing solutions solving problems using algorithmic principles** by  my selection and usage of different data structures and filtering algorithms. I believe I have _partially_ demonstrated **the ability to use well-founded and innovative techniques**, due to my imperfect utilization of multiprocessing.
+
+          ## Artifact materials
+
+          - Before enhancement: [User Interview records](/assets/interview-records.pdf)
+          - After enhancement: [Garden Tracker App](https://github.com/aldonadi/GardenTracker)
 
       - layout: left
         title: Database 
