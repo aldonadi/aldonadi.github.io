@@ -130,7 +130,7 @@ content:
         description: |
 
 
-          In this artifact milestone, I added Android’s Room persistence library and implemented the necessary classes and annotations for two Data Access Objects (DAOs), one for `PlotEntity` and one for `CropEntity`. I added the necessary boilerplate to my `Application` class and `AppContainer` to create the Room database from a seed sqlite3 shipped in the app’s assets directory, and hand-inserted several sample records.
+          In this artifact milestone, I added Android’s Room persistence library and implemented the necessary classes and annotations for two Data Access Objects (DAOs), one for `PlotEntity` and one for `CropEntity`. I created a [database class](https://github.com/aldonadi/GardenTracker/blob/bd9ecdc2615f7c32bd03df20a8b406110266b470/app/src/main/java/com/cs499/gardentracker/db/GardenTrackerDatabase.kt) and added the necessary boilerplate to my [`AppContainer`](https://github.com/aldonadi/GardenTracker/blob/bd9ecdc2615f7c32bd03df20a8b406110266b470/app/src/main/java/com/cs499/gardentracker/data/AppContainerImpl.kt) class to create the Room database from a seed sqlite3 shipped in the app’s assets directory, and hand-inserted several sample records.
 
           I developed and implemented a database schema for [Crops](https://github.com/aldonadi/GardenTracker/blob/bd9ecdc2615f7c32bd03df20a8b406110266b470/app/src/main/java/com/cs499/gardentracker/data/crop/CropEntity.kt) and [Plots](https://github.com/aldonadi/GardenTracker/blob/bd9ecdc2615f7c32bd03df20a8b406110266b470/app/src/main/java/com/cs499/gardentracker/data/plot/PlotEntity.kt). These include establishing primary keys for each table, adding constraints for which fields must not be null, adding indexes for several fields I expect to be accessed frequently, and established a foreign key constraint (and deletion propagation policy) for a one-to-many relationship between PlotEntity and CropEntity. I was careful to maintain the schema so far in fifth normal form, by separating independent facts into different tables, for example separating Crops from their Watering and FertilizingRecords. I also began implementing much more thorough unit testing, specifically on the CropDao class.
 
@@ -138,12 +138,16 @@ content:
 
           While I feel that I have demonstrated the outcomes I set out to for this artifact, there is still much more to improve for my final project. For example, I have not yet converted the Watering, Fertilizing, Harvesting, or JournalRecord repositories to sqlite3-backed Room DAO yet. I have planned out the schema, but have not yet implemented the DAO interfaces and annotations yet in the Kotlin code itself.
 
-          Doing this artifact enhancement has been more enjoyable and faster than the previous ones. I have begun to grow accustomed with reading and writing Kotlin code and its various eccentricities and syntactic differences. I have wrapped my mind around the Android Jetpack Compose architecture, and feel that I am starting to get the hang of reactive-based data flow and UI architecture. Unfortunately, I am still finding the official Android documentation for Compose, Compose Navigation, and Room to be confusing, out of date, and generally less than fully helpful. The best help I have found comes from copying parts of the documentation into an LLM and then challenging it with my questions, then trying to explain the concepts back to it in my own words while asking for its critiques.
+          Doing this artifact enhancement has been more enjoyable and faster than the previous ones. By this point I had begun to grow accustomed with reading and writing Kotlin code with its eccentricities. I have more completely wrapped my mind around the Android Jetpack Compose architecture, and feel that I am starting to get the hang of reactive-based data flow and UI architecture. Unfortunately, I am still finding the official Android documentation for Compose, Compose Navigation, and Room to be confusing, out of date, and generally less than fully helpful. The best help I have found comes from copying parts of the documentation into an LLM and then challenging it with my questions, then trying to explain the concepts back to it in my own words while asking for its critiques.
+
+          I, once again, assess that I have successfully demonstrated the outcomes set forth in my initial plan, but not to 100% satisfaction. Specifically, I have shown the ability to **use well-founded and innovative techniques** for database systems by implementing multiple data entities into table schemas, complete with key constraints and indices. On the other hand, I have only implemented some of my business objects to database persistence, therefore this is incomplete.
+
+          I have also demonstrated **a security mindset that anticipates adversarial exploits** by utilizing the Room library which provides safety against SQL injection attacks. However, due to the limited, single-user, serverless nature of my application, my app operates in an admittedly limited threat environment.
 
           ## Artifact materials
 
-          - Before enhancement: [](/assets/)
-          - After enhancement: [Garden Tracker App](https://github.com/aldonadi/GardenTracker)
+          - Before enhancement: [App Concept Overview document](/assets/garden-app-concept-overview.pdf)
+          - After enhancement: [Garden Tracker App, Database](https://github.com/aldonadi/GardenTracker/tree/bd9ecdc2615f7c32bd03df20a8b406110266b470/app/src/main/java/com/cs499/gardentracker/db)
 
 
   - title: Code Review
