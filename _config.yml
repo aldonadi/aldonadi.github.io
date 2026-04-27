@@ -45,7 +45,7 @@ about_content: | # this will include new lines to allow paragraphs
   Technologies and frameworks: <mark>Android</mark>, <mark>Jetpack Compose</mark>, and <mark>Angular</mark>. 
 
 content:
-  - title: Self Assessment
+  - title: Professional Self-Assessment
     layout: text
     content: |
       > Your professional self-assessment. While you complete this last in the course, it should be the first thing presented in your ePortfolio. The self-assessment will function as a holistic introduction to you, your skills that can be quantifiably supported with your completed enhancements of the artifacts, and your ePortfolio.
@@ -62,6 +62,23 @@ content:
         1. This summary will help demonstrate the full range of your computer science talents and abilities.
         2. This section should introduce your audience to the technical artifacts that follow the professional self-assessment.
 
+        My experience over the last 3 years in SNHU's Computer Science course has been one of challenges and rewarding growth. I have been exposed to many, many areas of this field that I would not have otherwise, such as reverse engineering, embedded systems programming, full-stack development, user interface design, and of course a TON of writing. I have developed skills in communicating technical concepts and concerns to audiences spanning from the C-suite, to developer peers, potential customers, and to users. For example, I have written a security policy document translating technical security requirements into language that business-minded managers can understand. I have crafted user interview scripts and engaged in live interviews with real potential stakeholders and users to elicit requirements and feedback for an upcoming program. I have built up a corpus of programming artifacts that both showcase my skills and pinpoint my developmental progress at various stages throughout my journey. I have developed a text-adventure program in Python, an Angular app with Express backend server, numerous MongoDB databases, and even reverse engineered legacy executables to enable interoperability with new systems. I have analyzed code and repositories for security vulnerabilities and produced actionable reports with recommendations for developer teams and implemented bug fixes in my own code. I have engaged with peer students and professorial staff throughout my studies, participating in group discussions and critical but thoughtful examinations. This has required me to communicate effectively to diverse audiences about difficult topics without the distraction of being offensive.
+
+        During this last capstone course, I set out to convert a series of user interviews and wireframes from a previous course into a working Android app for tracking garden maintenance (like watering and planting) using modern approaches and frameworks. This required me to learn Kotlin, Jetpack Compose, Compose Navigation, and a slew of Android OS integrations that must accompany these.
+
+        To showcase this, I have chosen three specific artifacts for enhancement. Each artifact is intended to demonstrate a key ability in the areas of **Software Engineering and Development**, **Algorithms and Data Structures**, and **Databases**. My artifacts are as follows:
+
+        - Software Engineering and Development:
+          - Before enhancement: a wireframe diagram illustrating a workflow of logging the watering of a garden plot.
+          - After enhancement: the completed source code for the app which implements this and a video screenshot showing the process.
+
+        - Algorithms and Data Structures:
+          - Before enhancement: the collections of notes from interviews that I conducted with three real potential users of this garden app, with elicited requirements.
+          - After enhancement: the completed source code, and particular selected portions of code linked to in the description.
+
+        - Databases:
+          - Before enhancement: the overall concept document I produced after the interviews and wireframe discussing the required data for the app.
+          - After enhancement: the completed source code, with particular selected portions of code linked to in the description.
 
 
   - title: Selected Artifacts 
@@ -126,7 +143,7 @@ content:
         title: Database 
         sub_title: Enhancement Three
         quote: >
-          Interviewing potential users along with paper prototypes of screens helped me elicit the data structures and algorithms necessary to organize and work with the various kinds of data that I would need to implement in the app.
+          Converting Business Objects and Relationships into Database Primitives
         description: |
 
 
