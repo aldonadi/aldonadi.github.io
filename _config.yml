@@ -85,6 +85,14 @@ content:
 
           Specific code examples: Here is the code for the app's [summary screen UI](https://github.com/aldonadi/GardenTracker/blob/master/app/src/main/java/com/cs499/gardentracker/ui/screens/summary/SummaryScreen.kt) and [ViewModel](https://github.com/aldonadi/GardenTracker/blob/master/app/src/main/java/com/cs499/gardentracker/ui/screens/summary/SummaryViewModel.kt).
 
+          ## Reflection
+          
+          I learned quite a bit standing up this application and the boilerplate necessary for Compose UI. First was becoming accustomed with thinking in _reactive UI_ and functional patterns, which is very different from object-oriented UI design. As I stated above, deficiecies in the documentation (mostly stemming from out-of-date information) led me down numerous dead-ends. However, I have gained a wealth of knowledge and experience in how to design and implement composable UIs in the MVVM architecture.
+
+          While there are many points of refinement I have not yet attended to in my app, I believe that I have successfully demonstrated the outcomes I set out to demonstrate, with comment. Specifically, I believe I successfully **employed strategies for building collaborative environments for diverse audiences** through the use of my user interviews for eliciting requirements. I also **designed, developed, and delivered professional communications** through my UI design and comments throughout the code.
+
+          However, I believe I have _incompletely_ demonstrated **well-founded and innovative techniques for implementing solutions** due to one very large defect in my implementation. This is that I am taking advantage of streaming `Flow` objects for anything except the passing of data from my ViewModels to my composable functions. This means that the chain of data from database, to DAO, to repository, to ViewModel can become stale without manually refreshing. I did not catch on to this flaw until late in the course and I have not had time to fix it (yet).
+
 
       - layout: left
         title: Algorithms and Data Structures
