@@ -38,7 +38,7 @@ youtube_username: "@AndrewWilson-i2k"
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hello, my name is Andrew Wilson and I am a software engineer with over 10 years of experience in the military and civilian power plant sector. I am infinitely curious and love understanding and solving problems with software.
+  Hello, my name is Andrew Wilson and I am a software engineer with over 15 years of experience in the military and civilian power plant sector. I am infinitely curious and love understanding and solving problems with software.
 
   Languages I am skilled in: <mark>Python</mark>, <mark>Java</mark>, <mark>Kotlin</mark>, <mark>Ruby</mark>, and <mark>Visual Basic</mark>.
 
@@ -48,20 +48,6 @@ content:
   - title: Professional Self-Assessment
     layout: text
     content: |
-      > Your professional self-assessment. While you complete this last in the course, it should be the first thing presented in your ePortfolio. The self-assessment will function as a holistic introduction to you, your skills that can be quantifiably supported with your completed enhancements of the artifacts, and your ePortfolio.
-      
-      > For your ePortfolio, you will write a professional self-assessment. In it, you will reflect on the capstone and your experience in the Computer Science program. Your professional self-assessment will serve as the formal introduction to your portfolio. You will add it to the beginning of your portfolio for your final submission in Module Seven.
-      
-      > Employers often interview a number of technically qualified candidates, so you should try to emphasize aspects of your ePortfolio that set you apart and quantifiably illustrate your competence and employability. In addition, the professional self-assessment is an opportunity to showcase your superior computer science knowledge, skills, and expertise. Be sure that your professional self-assessment is well-organized and thoughtful and that it effectively communicates your strengths in the field of computer science. The self-assessment might be a great first draft of a cover letter and useful as you apply for jobs with your new degree. Take advantage of your instructor’s feedback for this reason.
-
-      - Discuss how completing your coursework throughout the program and developing the ePortfolio has helped you showcase your strengths, shape your professional goals and values, and prepare to enter or become more employable in the computer science field.
-        1. Use specific examples from your program and include examples outside of the artifacts included in your ePortfolio.
-        2. Address the following topics: collaborating in a team environment, communicating with stakeholders, data structures and algorithms, software engineering and database, and security. This section should function as an overall introduction to your skills, not a discussion of the artifacts.
-
-      - Summarize and introduce how your artifacts fit together and inform the portfolio as a whole.
-        1. This summary will help demonstrate the full range of your computer science talents and abilities.
-        2. This section should introduce your audience to the technical artifacts that follow the professional self-assessment.
-
         My experience over the last 3 years in SNHU's Computer Science course has been one of challenges and rewarding growth. I have been exposed to many, many areas of this field that I would not have otherwise, such as reverse engineering, embedded systems programming, full-stack development, user interface design, and of course a TON of writing. I have developed skills in communicating technical concepts and concerns to audiences spanning from the C-suite, to developer peers, potential customers, and to users. For example, I have written a security policy document translating technical security requirements into language that business-minded managers can understand. I have crafted user interview scripts and engaged in live interviews with real potential stakeholders and users to elicit requirements and feedback for an upcoming program. I have built up a corpus of programming artifacts that both showcase my skills and pinpoint my developmental progress at various stages throughout my journey. I have developed a text-adventure program in Python, an Angular app with Express backend server, numerous MongoDB databases, and even reverse engineered legacy executables to enable interoperability with new systems. I have analyzed code and repositories for security vulnerabilities and produced actionable reports with recommendations for developer teams and implemented bug fixes in my own code. I have engaged with peer students and professorial staff throughout my studies, participating in group discussions and critical but thoughtful examinations. This has required me to communicate effectively to diverse audiences about difficult topics without the distraction of being offensive.
 
         During this last capstone course, I set out to convert a series of user interviews and wireframes from a previous course into a working Android app for tracking garden maintenance (like watering and planting) using modern approaches and frameworks. This required me to learn Kotlin, Jetpack Compose, Compose Navigation, and a slew of Android OS integrations that must accompany these.
@@ -114,6 +100,7 @@ content:
 
           - Before enhancement: [Watering workflow wireframe](/assets/garden-app-ui-wireframe.pdf)
           - After enhancement: [Garden Tracker App](https://github.com/aldonadi/GardenTracker)
+          - Narrative: [Milestone Two](/assets/3-2-milestone-two-narrative.pdf)
 
 
       - layout: left
@@ -138,6 +125,7 @@ content:
 
           - Before enhancement: [User Interview records](/assets/interview-records.pdf)
           - After enhancement: [Garden Tracker App](https://github.com/aldonadi/GardenTracker)
+          - Narrative: [Milestone Three](/assets/4-2-milestone-two-narrative.pdf)
 
       - layout: left
         title: Database 
@@ -165,6 +153,7 @@ content:
 
           - Before enhancement: [App Concept Overview document](/assets/garden-app-concept-overview.pdf)
           - After enhancement: [Garden Tracker App, Database](https://github.com/aldonadi/GardenTracker/tree/bd9ecdc2615f7c32bd03df20a8b406110266b470/app/src/main/java/com/cs499/gardentracker/db)
+          - Narrative: [Milestone Four](/assets/5-2-milestone-four-narrative.pdf)
 
 
   - title: Code Review
@@ -174,7 +163,9 @@ content:
         quote: >
           Critically examining a previous Android app and pointing out opportunities for enhancement.
         description: |
-          Here is the video of the <b>code</b> review:
+          At the beginning of this course, I conducted a recorded code review of portions of an Android app I had written in Java during a previous course. This older app has some parallels with the garden tracking app I created during my capstone.
+
+          In this code review, I take several example source code modules and explain what each is doing, how it fits with the wider program, and then critique its correctness, form, how clean it is, and assess any security vulnerabilities that are present. I also discuss how these issues could be corrected of improved.
 
           <iframe width="560" height="315" src="https://www.youtube.com/embed/17OiQtpx3Wo?si=qo2_y0UXNl3DC-Xg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
