@@ -100,6 +100,7 @@ content:
 
           - Before enhancement: [Watering workflow wireframe](/assets/garden-app-ui-wireframe.pdf)
           - After enhancement: [Garden Tracker App](https://github.com/aldonadi/GardenTracker)
+          - Narrative: [Milestone Two](/assets/3-2-milestone-two-narrative.pdf)
 
 
       - layout: left
@@ -124,6 +125,7 @@ content:
 
           - Before enhancement: [User Interview records](/assets/interview-records.pdf)
           - After enhancement: [Garden Tracker App](https://github.com/aldonadi/GardenTracker)
+          - Narrative: [Milestone Three](/assets/4-2-milestone-two-narrative.pdf)
 
       - layout: left
         title: Database 
@@ -151,6 +153,7 @@ content:
 
           - Before enhancement: [App Concept Overview document](/assets/garden-app-concept-overview.pdf)
           - After enhancement: [Garden Tracker App, Database](https://github.com/aldonadi/GardenTracker/tree/bd9ecdc2615f7c32bd03df20a8b406110266b470/app/src/main/java/com/cs499/gardentracker/db)
+          - Narrative: [Milestone Four](/assets/5-2-milestone-four-narrative.pdf)
 
 
   - title: Code Review
