@@ -163,7 +163,9 @@ content:
         quote: >
           Critically examining a previous Android app and pointing out opportunities for enhancement.
         description: |
-          Here is the video of the <b>code</b> review:
+          At the beginning of this course, I conducted a recorded code review of portions of an Android app I had written in Java during a previous course. This older app has some parallels with the garden tracking app I created during my capstone.
+
+          In this code review, I take several example source code modules and explain what each is doing, how it fits with the wider program, and then critique its correctness, form, how clean it is, and assess any security vulnerabilities that are present. I also discuss how these issues could be corrected of improved.
 
           <iframe width="560" height="315" src="https://www.youtube.com/embed/17OiQtpx3Wo?si=qo2_y0UXNl3DC-Xg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
